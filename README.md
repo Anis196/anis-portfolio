@@ -1,6 +1,6 @@
 # Anis Shaikh – Portfolio Website
 
-(![Portfolio Banner](landingPage.png)
+![Portfolio Banner](landingPage.png
 ) <!-- Optional: Replace with your own banner image -->
 
 A dynamic and modern portfolio built with **React**, **Vite**, and **Tailwind CSS**, showcasing my projects, experiences, publications, skills, and certifications. Designed with professional UI/UX standards and deployed on **Vercel**.
