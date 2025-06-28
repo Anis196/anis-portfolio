@@ -101,9 +101,19 @@ const Footer = () => {
           {/* Spacer / Future Column */}
           <div>
             <h4 className="text-lg font-semibold mb-4">Let’s Connect</h4>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Interested in collaborating or just want to say hi? Feel free to connect on any of the platforms above.
-            </p>
+            <p className="text-gray-400 text-sm leading-relaxed mb-4">
+  Interested in collaborating or just want to say hi? Feel free to connect on any of the platforms above.
+</p>
+
+{/* Visitor Counter Badge */}
+<div className="mt-2">
+  <img
+    src="https://visitor-badge.laobi.icu/badge?page_id=anis-portfolio-v1"
+    alt="Visitor Count"
+    className="inline-block"
+  />
+</div>
+
           </div>
         </div>
 
