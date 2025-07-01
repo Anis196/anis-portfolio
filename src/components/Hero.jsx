@@ -1,17 +1,16 @@
 import { ChevronDown, ExternalLink, Github } from "lucide-react";
 import { useEffect, useState } from "react";
-import myPic from './mypic.jpg'; // Adjust the path to your image
-
+import myPic from "./mypic.jpg";
 
 const Hero = () => {
   const [displayText, setDisplayText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const titles = [
-    "AI/ML Enthusiast",
-    "Computer Engineering Student",
-    "Competitive Programmer",
-    "Research Scholar",
-    "Java Backend Developer",
+    "Final Year Computer Science Student",
+    "Java Developer in Training",
+    "Machine Learning Explorer",
+    "Undergraduate Researcher",
+    "Tech Club President"
   ];
 
   useEffect(() => {
@@ -50,7 +49,7 @@ const Hero = () => {
         <div className="mb-8 flex flex-col items-center justify-center">
           {/* Profile Image with Glow */}
           <img
-            src={myPic}// Place your image in /public or adjust this path accordingly
+            src={myPic} // Place your image in /public or adjust this path accordingly
             alt="Anis Shaikh"
             className="w-60 h-60 rounded-full border-3 border-white shadow-xl mb-4 object-cover animate-glow animate-fade-in-up"
           />
@@ -70,100 +69,118 @@ const Hero = () => {
             </p>
           </div>
 
-          <p className="text-lg sm:text-xl text-neutral-300 dark:text-neutral-200
- mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in-up">
-            A Final Year Computer Engineering student at JSPM's RSCOE with expertise in
-            AI/ML, competitive programming, and innovative technology solutions.
-            Passionate about creating impactful applications and advancing
-            research.
+          <p
+            className="text-lg sm:text-xl text-neutral-300 dark:text-neutral-200
+ mb-8 max-w-3xl mx-auto leading-relaxed animate-fade-in-up"
+          >
+            A Final Year Computer Engineering student at JSPM's RSCOE with
+            expertise in AI/ML, competitive programming, and innovative
+            technology solutions. Passionate about creating impactful
+            applications and advancing research.
           </p>
         </div>
 
         {/* Stats */}
-<div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
-  {/* CGPA */}
-  <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
-    <div className="flex items-center justify-center mb-3">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="lucide lucide-award text-yellow-400"
-      >
-        <circle cx="12" cy="8" r="6"></circle>
-        <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
-      </svg>
-    </div>
-    <p className="text-3xl font-bold text-white mb-1">9.7</p>
-    <p className="text-neutral-300 dark:text-neutral-200
- text-sm font-medium">CGPA</p>
-  </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
+          {/* CGPA */}
+          <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+            <div className="flex items-center justify-center mb-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-award text-yellow-400"
+              >
+                <circle cx="12" cy="8" r="6"></circle>
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+              </svg>
+            </div>
+            <p className="text-3xl font-bold text-white mb-1">9.7</p>
+            <p
+              className="text-neutral-300 dark:text-neutral-200
+ text-sm font-medium"
+            >
+              CGPA
+            </p>
+          </div>
 
-  {/* AI/ML Hours */}
-  <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
-    <div className="flex items-center justify-center mb-3">
-      <span className="text-3xl text-green-400">⚡</span>
-    </div>
-    <p className="text-3xl font-bold text-white mb-1">Leadership</p>
-    <p className="text-neutral-300 dark:text-neutral-200
- text-sm font-medium">Lead 10+ events</p>
-  </div>
+          {/* AI/ML Hours */}
+          <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+            <div className="flex items-center justify-center mb-3">
+              <span className="text-3xl text-green-400">⚡</span>
+            </div>
+            <p className="text-3xl font-bold text-white mb-1">Leadership</p>
+            <p
+              className="text-neutral-300 dark:text-neutral-200
+ text-sm font-medium"
+            >
+              Lead 10+ events
+            </p>
+          </div>
 
-  {/* Problems Solved */}
-  <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
-    <div className="flex items-center justify-center mb-3">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="lucide lucide-brain text-purple-400"
-      >
-        <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path>
-        <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path>
-        <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path>
-      </svg>
-    </div>
-    <p className="text-3xl font-bold text-white mb-1">500+</p>
-    <p className="text-neutral-300 dark:text-neutral-200
- text-sm font-medium">Problems Solved</p>
-  </div>
+          {/* Problems Solved */}
+          <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+            <div className="flex items-center justify-center mb-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-brain text-purple-400"
+              >
+                <path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path>
+                <path d="M12 5a3 3 0 1 1 5.997.125 4 4 0 0 1 2.526 5.77 4 4 0 0 1-.556 6.588A4 4 0 1 1 12 18Z"></path>
+                <path d="M15 13a4.5 4.5 0 0 1-3-4 4.5 4.5 0 0 1-3 4"></path>
+              </svg>
+            </div>
+            <p className="text-3xl font-bold text-white mb-1">500+</p>
+            <p
+              className="text-neutral-300 dark:text-neutral-200
+ text-sm font-medium"
+            >
+              Problems Solved
+            </p>
+          </div>
 
-  {/* Hackathon Achievement */}
-  <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
-    <div className="flex items-center justify-center mb-3">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="32"
-        height="32"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        className="lucide lucide-award text-orange-400"
-      >
-        <circle cx="12" cy="8" r="6"></circle>
-        <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
-      </svg>
-    </div>
-    <p className="text-3xl font-bold text-white mb-1">2nd Rank</p>
-    <p className="text-neutral-300 dark:text-neutral-200
- text-sm font-medium">National Hackathon</p>
-  </div>
-</div>
+          {/* Hackathon Achievement */}
+          <div className="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:bg-white/10 transition-all duration-300 hover:scale-105">
+            <div className="flex items-center justify-center mb-3">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="lucide lucide-award text-orange-400"
+              >
+                <circle cx="12" cy="8" r="6"></circle>
+                <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"></path>
+              </svg>
+            </div>
+            <p className="text-3xl font-bold text-white mb-1">2nd Rank</p>
+            <p
+              className="text-neutral-300 dark:text-neutral-200
+ text-sm font-medium"
+            >
+              National Hackathon
+            </p>
+          </div>
+        </div>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
