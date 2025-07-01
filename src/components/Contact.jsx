@@ -211,7 +211,7 @@ const Contact = () => {
                           value={formData.name}
                           onChange={handleInputChange}
                           required
-                          className="w-full pl-11 pr-4 py-3 border border-gra300y- rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors text-black"
+                          className="w-full pl-11 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors text-black"
                           placeholder="Your Name"
                         />
                       </div>
@@ -288,7 +288,7 @@ const Contact = () => {
 
                   <button
                     type="submit"
-                    className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300 flex items-center justify-center group"
+                    className="w-full bg-gradient-to-red from-blue-600 to-purple-600 text-white font-semibold py-3 px-6 rounded-lg hover:shadow-lg transition-all duration-300 flex items-center justify-center group"
                   >
                     <Send
                       size={20}
