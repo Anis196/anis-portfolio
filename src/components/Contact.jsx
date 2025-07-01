@@ -251,7 +251,7 @@ const Contact = () => {
                     </label>
                     <div className="relative">
                       <MessageSquare
-                        className="absolute left-3 top-3 text-gray-400"
+                        className="absolute left-3 top-3 text-gray-400 "
                         size={20}
                       />
                       <input
@@ -261,7 +261,7 @@ const Contact = () => {
                         value={formData.subject}
                         onChange={handleInputChange}
                         required
-                        className="w-full pl-11 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors "
+                        className="w-full pl-11 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors text-black"
                         placeholder="What's this about?"
                       />
                     </div>
